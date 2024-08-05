@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 id="title">Library Survey Form</h1>
+      <p id="description">We value your feedback! Please fill out this survey to help us improve our library services.</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name"/>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Enter your email" />
+        
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" required min="13" max="100" placeholder="Enter your number"/>
+        
+        <label for="dropdown" id="dropdown-label">How often do you visit the library?</label>
+        <select id="dropdown">
+          <option>Daily</option>
+          <option>Weekly</option>
+          <option>Monthly</option>
+          <option>Rarely</option>
+        </select>
+        <label>
+        <p>What is your favorite section of the library? (Select one)</p>
+        <input type="radio" name="favorite-section" value="fiction" id="fiction"/>
+        <label for="fiction">Fiction</label><br>
+        <input type="radio" name="favorite-section" value="non-fiction" id="non-fiction"/>
+        <label for="non-fiction">Non Fiction</label><br>
+        <input type="radio" name="favorite-section" value="magazines" id="magazines"/>
+        <label for="magazines">Magazines</label><br>
+        <input type="radio" name="favorite-section" value="comics" id="comics"/>
+        <label for="comics">Comics</label><br>
+
+        <p>Which of the following services do you use? (Select all that apply)</p>
+        <input type="checkbox" name="services" value="book-loans" id="book-loans"/>
+        <label for="book-loans">Book Loans</label><br>
+        <input type="checkbox" name="services" value="ebooks" id="ebooks"/>
+        <label for="ebooks">E-books</label><br>
+        <input type="checkbox" name="services" value="study-rooms" id="study-rooms"/>
+        <label for="study-rooms">Study Rooms</label><br>
+        <input type="checkbox" name="services" value="events" id="events"/>
+        <label for="events">Events</label><br>
+        
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Enter your comments here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
