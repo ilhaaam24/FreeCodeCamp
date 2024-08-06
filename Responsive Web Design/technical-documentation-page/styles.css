@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pop Sans', sans-serif;
+}
+html {
+  scroll-behavior: smooth; /* Menambahkan smooth scrolling */
+}
+#main-doc {
+ display: flex;
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: rgb(29, 29, 29);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+.main-section {
+  padding: 20px;
+  background-color: #ffffff;
+  height: 500px;
+}
+
+#main-doc #navbar header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 30px;
+  font-weight: bold;
+}
+
+
+#main-doc #navbar h3{
+  padding: 15px;
+}
+#main-doc #navbar h3 a{
+  color: #fff;
+  text-decoration: none;
+}
+#main-doc .main-section header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#main-doc .main-section p {
+  margin: 10px 0;
+}

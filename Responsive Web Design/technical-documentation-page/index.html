@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Documentation</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>React JS </header>
+      <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
+      <h3><a href="#hello_react" class="nav-link">Hello React</a></h3>
+      <h3><a href="#use_cases" class="nav-link">Use cases</a></h3>
+      <h3><a href="#react_in_js" class="nav-link">How does React use JavaScript?</a></h3>
+      <h3><a href="#setting_up" class="nav-link">Setting React app</a></h3>
+      <h3><a href="#react_component" class="nav-link">React component</a></h3>
+      <h3><a href="#moving_on" class="nav-link">Moving on to main</a></h3>
+    </nav>
+    <div class="content">
+
+      <section class="main-section" id="introduction">
+        <header>Getting started with React</header>
+        <p>In this article we will say hello to React. We'll discover a little bit of detail about its background and use cases, set up a basic React toolchain on our local computer, and create and play with a simple starter app — learning a bit about how React works in the process.</p>
+      </section>
+      <section class="main-section" id="hello_react">
+        <header>Hello React</header>
+        <p>As its official tagline states, React is a library for building user interfaces. React is not a framework – it's not even exclusive to the web. It's used with other libraries to render to certain environments. For instance, React Native can be used to build mobile applications.</p>
+        <p>To build for the web, developers use React in tandem with ReactDOM. React and ReactDOM are often discussed in the same spaces as — and utilized to solve the same problems as — other true web development frameworks. When we refer to React as a "framework", we're working with that colloquial understanding.</p>
+        <p>React's primary goal is to minimize the bugs that occur when developers are building UIs. It does this through the use of components — self-contained, logical pieces of code that describe a portion of the user interface. These components can be composed together to create a full UI, and React abstracts away much of the rendering work, leaving you to concentrate on the UI design.</p>
+      </section>
+      <section class="main-section" id="use_cases">
+        <header>Use cases</header>
+        <p>Unlike the other frameworks covered in this module, React does not enforce strict rules around code conventions or file organization. This allows teams to set conventions that work best for them, and to adopt React in any way they would like to. React can handle a single button, a few pieces of an interface, or an app's entire user interface.</p>
+        <p>While React can be used for small pieces of an interface, it's not as easy to "drop into" an application as a library like jQuery, or even a framework like Vue — it is more approachable when you build your entire app with React.</p>
+        <p>In addition, many of the developer-experience benefits of a React app, such as writing interfaces with JSX, require a compilation process. Adding a compiler like Babel to a website makes the code on it run slowly, so developers often set up such tooling with a build step. React arguably has a heavy tooling requirement, but it can be learned.</p>
+        <p>This article is going to focus on the use case of using React to render the entire user interface of an application with the support of Vite, a modern front-end build tool.</p>
+      </section>
+      <section class="main-section" id="react_in_js">
+        <header>How does React use JavaScript?</header>
+        <p>React utilizes features of modern JavaScript for many of its patterns. Its biggest departure from JavaScript comes with the use of JSX syntax. JSX extends JavaScript's syntax so that HTML-like code can live alongside it. For example:</p>
+        <code>const heading = <h1>Mozilla Developer Network</h1>;
+</code>
+<p>This heading constant is known as a JSX expression. React can use it to render that <> tag in our app.</p>
+  <p>Suppose we wanted to wrap our heading in a header tag, for semantic reasons? The JSX approach allows us to nest our elements within each other, just like we do with HTML:</p>
+      </section>
+      <section class="main-section" id="setting_up">
+        <header>Setting up your first React app</header>
+      </section>
+      <section class="main-section" id="react_component">
+        <header>Exploring our first React component </header>
+      </section>
+      <section class="main-section" id="moving_on">
+        <header>Moving on to main</header>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
