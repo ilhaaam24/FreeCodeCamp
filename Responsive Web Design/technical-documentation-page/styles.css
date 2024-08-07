@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Pop Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 html {
   scroll-behavior: smooth; /* Menambahkan smooth scrolling */
@@ -15,25 +15,57 @@ html {
   position: fixed;
   height: 100%;
   width: 300px;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(20, 31, 50);
+  border-right: 5px solid rgb(87, 87, 87);
 }
 .content{
   display: flex;
   flex-direction: column;
   margin-left: 300px;
 }
+.content #search{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.content #search svg{
+  width: 40px;
+  height: 40px; 
+  margin: 10px;
+  position: absolute;
+}
+.content #search #search-input{
+  width: 100%;
+  padding: 30px 60px;
+  font-size: 1.3rem;
+  border: 0;
+  box-shadow: 0 10px 10px rgb(0,0,0,0.5);
+}
 .main-section {
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 30px;
+  background-color: #f4f4f4;
   height: 500px;
+  color: rgb(33, 51, 83);
+}
+.main-section p{
+  font-size: 1.3rem;
 }
 
 #main-doc #navbar header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
   padding: 30px;
   font-weight: bold;
+  cursor: pointer;
+}
+#main-doc #navbar header svg {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 
@@ -43,6 +75,11 @@ html {
 #main-doc #navbar h3 a{
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease ;
+}
+#main-doc #navbar h3 a:hover{
+  color: #888;
+  margin-left: 30px;
 }
 #main-doc .main-section header {
   font-size: 3rem;
@@ -50,4 +87,7 @@ html {
 }
 #main-doc .main-section p {
   margin: 10px 0;
+}
+#moving_on{
+  padding-bottom: 800px;
 }

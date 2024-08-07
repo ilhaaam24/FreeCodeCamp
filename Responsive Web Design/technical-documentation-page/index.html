@@ -1,59 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <title>Documentation</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <main id="main-doc">
-    <nav id="navbar">
-      <header>React JS </header>
-      <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
-      <h3><a href="#hello_react" class="nav-link">Hello React</a></h3>
-      <h3><a href="#use_cases" class="nav-link">Use cases</a></h3>
-      <h3><a href="#react_in_js" class="nav-link">How does React use JavaScript?</a></h3>
-      <h3><a href="#setting_up" class="nav-link">Setting React app</a></h3>
-      <h3><a href="#react_component" class="nav-link">React component</a></h3>
-      <h3><a href="#moving_on" class="nav-link">Moving on to main</a></h3>
-    </nav>
-    <div class="content">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <div class="btn">
 
-      <section class="main-section" id="introduction">
-        <header>Getting started with React</header>
-        <p>In this article we will say hello to React. We'll discover a little bit of detail about its background and use cases, set up a basic React toolchain on our local computer, and create and play with a simple starter app — learning a bit about how React works in the process.</p>
-      </section>
-      <section class="main-section" id="hello_react">
-        <header>Hello React</header>
-        <p>As its official tagline states, React is a library for building user interfaces. React is not a framework – it's not even exclusive to the web. It's used with other libraries to render to certain environments. For instance, React Native can be used to build mobile applications.</p>
-        <p>To build for the web, developers use React in tandem with ReactDOM. React and ReactDOM are often discussed in the same spaces as — and utilized to solve the same problems as — other true web development frameworks. When we refer to React as a "framework", we're working with that colloquial understanding.</p>
-        <p>React's primary goal is to minimize the bugs that occur when developers are building UIs. It does this through the use of components — self-contained, logical pieces of code that describe a portion of the user interface. These components can be composed together to create a full UI, and React abstracts away much of the rendering work, leaving you to concentrate on the UI design.</p>
-      </section>
-      <section class="main-section" id="use_cases">
-        <header>Use cases</header>
-        <p>Unlike the other frameworks covered in this module, React does not enforce strict rules around code conventions or file organization. This allows teams to set conventions that work best for them, and to adopt React in any way they would like to. React can handle a single button, a few pieces of an interface, or an app's entire user interface.</p>
-        <p>While React can be used for small pieces of an interface, it's not as easy to "drop into" an application as a library like jQuery, or even a framework like Vue — it is more approachable when you build your entire app with React.</p>
-        <p>In addition, many of the developer-experience benefits of a React app, such as writing interfaces with JSX, require a compilation process. Adding a compiler like Babel to a website makes the code on it run slowly, so developers often set up such tooling with a build step. React arguably has a heavy tooling requirement, but it can be learned.</p>
-        <p>This article is going to focus on the use case of using React to render the entire user interface of an application with the support of Vite, a modern front-end build tool.</p>
-      </section>
-      <section class="main-section" id="react_in_js">
-        <header>How does React use JavaScript?</header>
-        <p>React utilizes features of modern JavaScript for many of its patterns. Its biggest departure from JavaScript comes with the use of JSX syntax. JSX extends JavaScript's syntax so that HTML-like code can live alongside it. For example:</p>
-        <code>const heading = <h1>Mozilla Developer Network</h1>;
-</code>
-<p>This heading constant is known as a JSX expression. React can use it to render that <> tag in our app.</p>
-  <p>Suppose we wanted to wrap our heading in a header tag, for semantic reasons? The JSX approach allows us to nest our elements within each other, just like we do with HTML:</p>
-      </section>
-      <section class="main-section" id="setting_up">
-        <header>Setting up your first React app</header>
-      </section>
-      <section class="main-section" id="react_component">
-        <header>Exploring our first React component </header>
-      </section>
-      <section class="main-section" id="moving_on">
-        <header>Moving on to main</header>
-      </section>
-    </div>
-  </main>
-</body>
+        </div>
+        <header>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#80deea" d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z"></path>
+            <path
+              fill="#80deea"
+              d="M15.1,44.6c-1,0-1.8-0.2-2.6-0.7C7.6,41.1,8.9,30.2,15.3,19l0,0c3-5.2,6.7-9.6,10.3-12.4c3.9-3,7.4-3.9,9.8-2.5	c2.5,1.4,3.4,4.9,2.8,9.8c-0.6,4.6-2.6,10-5.6,15.2c-3,5.2-6.7,9.6-10.3,12.4C19.7,43.5,17.2,44.6,15.1,44.6z M32.9,5.4	c-1.6,0-3.7,0.9-6,2.7c-3.4,2.7-6.9,6.9-9.8,11.9l0,0c-6.3,10.9-6.9,20.3-3.6,22.2c1.7,1,4.5,0.1,7.6-2.3c3.4-2.7,6.9-6.9,9.8-11.9	c2.9-5,4.8-10.1,5.4-14.4c0.5-4-0.1-6.8-1.8-7.8C34,5.6,33.5,5.4,32.9,5.4z"></path>
+            <path
+              fill="#80deea"
+              d="M33,44.6c-5,0-12.2-6.1-17.6-15.6C8.9,17.8,7.6,6.9,12.5,4.1l0,0C17.4,1.3,26.2,7.8,32.7,19	c3,5.2,5,10.6,5.6,15.2c0.7,4.9-0.3,8.3-2.8,9.8C34.7,44.4,33.9,44.6,33,44.6z M13.5,5.8c-3.3,1.9-2.7,11.3,3.6,22.2	c6.3,10.9,14.1,16.1,17.4,14.2c1.7-1,2.3-3.8,1.8-7.8c-0.6-4.3-2.5-9.4-5.4-14.4C24.6,9.1,16.8,3.9,13.5,5.8L13.5,5.8z"></path>
+            <circle cx="24" cy="24" r="4" fill="#80deea"></circle></svg
+          >React JS
+        </header>
+        <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
+        <h3><a href="#hello_react" class="nav-link">Hello React</a></h3>
+        <h3><a href="#use_cases" class="nav-link">Use cases</a></h3>
+        <h3><a href="#react_in_js" class="nav-link">How does React use JavaScript?</a></h3>
+        <h3><a href="#setting_up" class="nav-link">Setting React app</a></h3>
+        <h3><a href="#react_component" class="nav-link">React component</a></h3>
+        <h3><a href="#moving_on" class="nav-link">Moving on to main</a></h3>
+      </nav>
+      <div class="content">
+        <div id="search">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+            <path
+              d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+          </svg>
+          <input type="text" id="search-input" placeholder="Search Documentation" />
+        </div>
+        <section class="main-section" id="introduction">
+          <header>Getting started with React</header>
+          <p>
+            In this article we will say hello to React. We'll discover a little bit of detail about its background and use cases, set up a basic React toolchain on our local computer, and create and play with a simple starter app — learning
+            a bit about how React works in the process.
+          </p>
+        </section>
+        <section class="main-section" id="hello_react">
+          <header>Hello React</header>
+          <p>
+            As its official tagline states, React is a library for building user interfaces. React is not a framework – it's not even exclusive to the web. It's used with other libraries to render to certain environments. For instance,
+            React Native can be used to build mobile applications.
+          </p>
+          <p>
+            To build for the web, developers use React in tandem with ReactDOM. React and ReactDOM are often discussed in the same spaces as — and utilized to solve the same problems as — other true web development frameworks. When we refer
+            to React as a "framework", we're working with that colloquial understanding.
+          </p>
+          <p>
+            React's primary goal is to minimize the bugs that occur when developers are building UIs. It does this through the use of components — self-contained, logical pieces of code that describe a portion of the user interface. These
+            components can be composed together to create a full UI, and React abstracts away much of the rendering work, leaving you to concentrate on the UI design.
+          </p>
+        </section>
+        <section class="main-section" id="use_cases">
+          <header>Use cases</header>
+          <p>
+            Unlike the other frameworks covered in this module, React does not enforce strict rules around code conventions or file organization. This allows teams to set conventions that work best for them, and to adopt React in any way
+            they would like to. React can handle a single button, a few pieces of an interface, or an app's entire user interface.
+          </p>
+          <p>
+            While React can be used for small pieces of an interface, it's not as easy to "drop into" an application as a library like jQuery, or even a framework like Vue — it is more approachable when you build your entire app with React.
+          </p>
+          <p>
+            In addition, many of the developer-experience benefits of a React app, such as writing interfaces with JSX, require a compilation process. Adding a compiler like Babel to a website makes the code on it run slowly, so developers
+            often set up such tooling with a build step. React arguably has a heavy tooling requirement, but it can be learned.
+          </p>
+          <p>This article is going to focus on the use case of using React to render the entire user interface of an application with the support of Vite, a modern front-end build tool.</p>
+        </section>
+        <section class="main-section" id="react_in_js">
+          <header>How does React use JavaScript?</header>
+          <p>
+            React utilizes features of modern JavaScript for many of its patterns. Its biggest departure from JavaScript comes with the use of JSX syntax. JSX extends JavaScript's syntax so that HTML-like code can live alongside it. For
+            example:
+          </p>
+          <code
+            >const heading =
+            <h1>Mozilla Developer Network</h1>
+            ;
+          </code>
+          <p>This heading constant is known as a JSX expression. React can use it to render that <> tag in our app.</p>
+          <p>Suppose we wanted to wrap our heading in a header tag, for semantic reasons? The JSX approach allows us to nest our elements within each other, just like we do with HTML:</p>
+        </section>
+        <section class="main-section" id="setting_up">
+          <header>Setting up your first React app</header>
+        </section>
+        <section class="main-section" id="react_component">
+          <header>Exploring our first React component</header>
+        </section>
+        <section class="main-section" id="moving_on">
+          <header>Moving on to main</header>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
