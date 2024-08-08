@@ -8,9 +8,7 @@
   <body>
     <main id="main-doc">
       <nav id="navbar">
-        <div class="btn">
-
-        </div>
+        <div class="btn"></div>
         <header>
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
             <path fill="#80deea" d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z"></path>
@@ -23,30 +21,35 @@
             <circle cx="24" cy="24" r="4" fill="#80deea"></circle></svg
           >React JS
         </header>
-        <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
-        <h3><a href="#hello_react" class="nav-link">Hello React</a></h3>
-        <h3><a href="#use_cases" class="nav-link">Use cases</a></h3>
-        <h3><a href="#react_in_js" class="nav-link">How does React use JavaScript?</a></h3>
-        <h3><a href="#setting_up" class="nav-link">Setting React app</a></h3>
-        <h3><a href="#react_component" class="nav-link">React component</a></h3>
-        <h3><a href="#moving_on" class="nav-link">Moving on to main</a></h3>
+        <h3><a href="#Getting_started_with_React" class="nav-link">Getting started with React</a></h3>
+        <h3><a href="#Hello_React" class="nav-link">Hello React</a></h3>
+        <h3><a href="#Use_cases" class="nav-link">Use cases</a></h3>
+        <h3><a href="#How_does_React_use_JavaScript" class="nav-link">How does React use JavaScript</a></h3>
+        <h3><a href="#Setting_up_your_first_React_app" class="nav-link">Setting up your first React app</a></h3>
+        <h3><a href="#Exploring_our_first_React_component" class="nav-link">Exploring our first React component</a></h3>
+        <h3><a href="#Moving_on_to_main" class="nav-link">Moving on to main</a></h3>
+        <h3><a href="#Starting_fresh" class="nav-link">Starting fresh</a></h3>
+       
+        <h3><a href="#Practice_with_JSX" class="nav-link">Practice with JSX</a></h3>
+        <h3><a href="#Summary" class="nav-link">Summary</a></h3>
       </nav>
       <div class="content">
         <div id="search">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-            <path
-              d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-          </svg>
-          <input type="text" id="search-input" placeholder="Search Documentation" />
+          <label for="search-input">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+              <path
+                d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path></svg
+          ></label>
+          <input type="text" id="search-input" placeholder="Search Documentation" name="search-input"/>
         </div>
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Getting_started_with_React">
           <header>Getting started with React</header>
           <p>
             In this article we will say hello to React. We'll discover a little bit of detail about its background and use cases, set up a basic React toolchain on our local computer, and create and play with a simple starter app — learning
             a bit about how React works in the process.
           </p>
         </section>
-        <section class="main-section" id="hello_react">
+        <section class="main-section" id="Hello_React">
           <header>Hello React</header>
           <p>
             As its official tagline states, React is a library for building user interfaces. React is not a framework – it's not even exclusive to the web. It's used with other libraries to render to certain environments. For instance,
@@ -61,7 +64,7 @@
             components can be composed together to create a full UI, and React abstracts away much of the rendering work, leaving you to concentrate on the UI design.
           </p>
         </section>
-        <section class="main-section" id="use_cases">
+        <section class="main-section" id="Use_cases">
           <header>Use cases</header>
           <p>
             Unlike the other frameworks covered in this module, React does not enforce strict rules around code conventions or file organization. This allows teams to set conventions that work best for them, and to adopt React in any way
@@ -76,8 +79,8 @@
           </p>
           <p>This article is going to focus on the use case of using React to render the entire user interface of an application with the support of Vite, a modern front-end build tool.</p>
         </section>
-        <section class="main-section" id="react_in_js">
-          <header>How does React use JavaScript?</header>
+        <section class="main-section" id="How_does_React_use_JavaScript">
+          <header>How does React use JavaScript</header>
           <p>
             React utilizes features of modern JavaScript for many of its patterns. Its biggest departure from JavaScript comes with the use of JSX syntax. JSX extends JavaScript's syntax so that HTML-like code can live alongside it. For
             example:
@@ -90,16 +93,43 @@
           <p>This heading constant is known as a JSX expression. React can use it to render that <> tag in our app.</p>
           <p>Suppose we wanted to wrap our heading in a header tag, for semantic reasons? The JSX approach allows us to nest our elements within each other, just like we do with HTML:</p>
         </section>
-        <section class="main-section" id="setting_up">
+        <section class="main-section" id="Setting_up_your_first_React_app">
           <header>Setting up your first React app</header>
         </section>
-        <section class="main-section" id="react_component">
+        <section class="main-section" id="Exploring_our_first_React_component">
           <header>Exploring our first React component</header>
         </section>
-        <section class="main-section" id="moving_on">
+        <section class="main-section" id="Moving_on_to_main">
           <header>Moving on to main</header>
+           <p>Let's open src/main.jsx, because that's where the <App /> component is being used. This file is the entry point for our app, and it initially looks like this:</p>
+
+          <p>As with App.jsx, the file starts by importing all the JS modules and other assets it needs to run.</p>
+          <p>The first two statements import the React and ReactDOM libraries because they are referenced later in the file. We don't write a path or extension when importing these libraries because they are not local files. In fact, they are listed as dependencies in our package.json file. Be careful of this distinction as you work through this lesson!</p>
+          <p>We then import our App() function and index.css, which holds global styles that are applied to our whole app.</p>
+          <p>We then call the ReactDOM.createRoot() function, which defines the root node of our application. This takes as an argument the DOM element inside which we want our React app to be rendered. In this case, that's the DOM element with an ID of root. Finally, we chain the render() method onto the createRoot() call, passing it the JSX expression that we want to render inside our root. By writing <App /> as this JSX expression, we're telling React to call the App() function which renders the App component inside the root node.</p>
+          <p>You can read up on these React APIs, if you'd like:</p>
+        </section>
+        <section class="main-section" id="Starting_fresh">
+          <header>Starting fresh</header>
+        </section>
+        <section class="main-section" id="Practice_with_JSX">
+          <header>Practice with JSX</header>
+          <p>Next, we'll use our JavaScript skills to get a bit more comfortable writing JSX and working with data in React. We'll talk about how to add attributes to JSX elements, how to write comments, how to render content from variables and other expressions, and how to pass data into components with props.</p>
+        </section>
+        <section class="main-section" id="Summary">
+          <header>Summary</header>
+          <p>This brings us to the end of our initial look at React, including how to install it locally, creating a starter app, and how the basics work. In the next article, we'll start building our first proper application — a todo list. Before we do that, however, let's recap some of the things we've learned.</p>
+          <ul>
+            <li>Components can import modules they need and must export themselves at the bottom of their files.</li>
+            <li>Component functions are named with PascalCase.</li>
+            <li>You can render JavaScript expressions in JSX by putting them between curly braces, like {so}.</li>
+            <li>Some JSX attributes are different than HTML attributes so that they don't conflict with JavaScript reserved words. For example, class in HTML translates to className in JSX.</li>
+            <li>Props are written just like attributes inside component calls and are passed into components.</li>
+          </ul>
         </section>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
