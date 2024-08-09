@@ -46,17 +46,7 @@ html {
 .content #search #search-input:focus{
   outline-color: aqua;
 }
-.main-section {
-  padding: 30px;
-  background-color: #e6e6e6;
-  height: 500px;
-  color: rgb(33, 51, 83);
-}
-.main-section p{
-  display: block;
-  margin: 20px 0;
-  font-size: 1.3rem;
-}
+
 
 #main-doc #navbar header {
   display: flex;
@@ -76,15 +66,22 @@ html {
 }
 
 
-#main-doc #navbar h3{
+#main-doc #navbar ul {
   padding: 15px;
 }
-#main-doc #navbar h3 a{
+#main-doc #navbar ul li{
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 0;
+
+}
+#main-doc #navbar ul li a{
   color: #fff;
   text-decoration: none;
   transition: all 0.5s ease ;
+  list-style: none;
 }
-#main-doc #navbar h3 a:hover{
+#main-doc #navbar ul li a:hover{
   color: #888;
   margin-left: 30px;
 }
@@ -95,6 +92,45 @@ html {
 #main-doc .main-section p {
   margin: 10px 0;
 }
-#moving_on{
-  padding-bottom: 800px;
+.main-section {
+  padding: 10px 20px;
+  background-color: #e6e6e6;
+  color: rgb(33, 51, 83);
+}
+.main-section p{
+  display: block;
+  padding: 20px 0;
+  line-height: 30px;
+  font-size: 1.3rem;
+}
+.main-section code{
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+  padding: 10px ;
+  padding-bottom: 20px;
+  border-radius:5px;
+}
+.main-section code h5{
+  padding: 5px 0;
+  margin-bottom: 10px ;
+  border-bottom: #888 solid 1px;
+}
+.main-section ul li{
+  margin: 10px 70px;
+  font-size: 1.3rem;
+
+}
+.main-section .note{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background-color: rgb(28, 28, 44);
+  color: #fff;
+  border-radius: 5px;
+}
+.main-section .note img{
+  color: #fff;
+  
 }
