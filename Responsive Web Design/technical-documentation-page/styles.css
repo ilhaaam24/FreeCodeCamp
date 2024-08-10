@@ -14,39 +14,15 @@ html {
 #navbar {
   position: fixed;
   height: 100%;
-  width: 300px;
+  width: 400px;
   background-color: rgb(20, 31, 50);
   border-right: 5px solid rgb(87, 87, 87);
 }
 .content{
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
+  margin-left: 400px;
 }
-.content #search{
-  display: flex;
-  align-items: center;
-  background-color:#e6e6e6;
-}
-.content #search label svg{
-  width: 40px;
-  height: 40px; 
-  margin: 10px;
-  position: absolute;
-  top: 10px;
-  cursor: text;
-}
-.content #search #search-input{
-  width: 100%;
-  padding: 30px 60px;
-  font-size: 1.3rem;
-  border: 0;
-  border-radius: 20px;
-}
-.content #search #search-input:focus{
-  outline-color: aqua;
-}
-
 
 #main-doc #navbar header {
   display: flex;
@@ -94,7 +70,7 @@ html {
 }
 .main-section {
   padding: 10px 20px;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
   color: rgb(33, 51, 83);
 }
 .main-section p{
@@ -104,7 +80,7 @@ html {
   font-size: 1.3rem;
 }
 .main-section code{
-  background-color: #fff;
+  background-color: #dcdcdc;
   width: 100%;
   display: block;
   margin: 20px 0;
@@ -123,6 +99,7 @@ html {
 
 }
 .main-section .note{
+  width: 100%;
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -133,4 +110,85 @@ html {
 .main-section .note img{
   color: #fff;
   
+}
+
+
+#navbar {
+  display: block;
+}
+#navbar ul {
+  display: block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  flex-direction: column;
+  display: none;
+
+
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content ul li {
+  padding: 10px;
+}
+
+/* Button style */
+.dropdown-btn {
+  display: none;
+  background-color: #80deea;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (min-width: 800px){
+  #navbar ul{
+    display: block;
+  }
+
+  .dropdown-content {
+    display: block;
+  }
+}
+
+/* Media query for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+  #main-doc {
+    flex-direction: column;
+  }
+  
+  .content{
+    margin:  0;
+
+  }
+  
+ #navbar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+#main-doc #navbar header{
+  padding: 10px    
+
+  }
+  .content {
+    margin-left: 0;
+  }
+  .dropdown-btn {
+    display: block; /* Show the button on small screens */
+  }
+ 
+  .dropdown-content.show {
+    display: block; /* Show the dropdown when clicked */
+  }
 }

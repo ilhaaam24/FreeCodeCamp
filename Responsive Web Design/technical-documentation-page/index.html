@@ -8,7 +8,6 @@
   <body>
     <main id="main-doc">
       <nav id="navbar">
-        <div class="btn"></div>
         <header>
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
             <path fill="#80deea" d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z"></path>
@@ -21,28 +20,24 @@
             <circle cx="24" cy="24" r="4" fill="#80deea"></circle></svg
           >React JS
         </header>
-        <ul>
-          <li><a href="#Getting_started_with_React" class="nav-link">Getting started with React</a></li>
-          <li><a href="#Hello_React" class="nav-link">Hello React</a></a></li>
-          <li><a href="#Use_cases" class="nav-link">Use cases</a></li>
-          <li><a href="#How_does_React_use_JavaScript" class="nav-link">How does React use JavaScript</a></li>
-          <li><a href="#Setting_up_your_first_React_app" class="nav-link">Setting up your first React app</a></li>
-          <li><a href="#Exploring_our_first_React_component" class="nav-link">Exploring our first React component</a></li>
-          <li><a href="#Moving_on_to_main" class="nav-link">Moving on to main</a></li>
-          <li><a href="#Starting_fresh" class="nav-link">Starting fresh</a></li>
-          <li><a href="#Practice_with_JSX" class="nav-link">Practice with JSX</a></li>
-          <li><a href="#Summary" class="nav-link">Summary</a></li>
-        </ul>
+        <button class="dropdown-btn">Menu</button>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#Getting_started_with_React" class="nav-link">Getting started with React</a></li>
+            <li><a href="#Hello_React" class="nav-link">Hello React</a></li>
+            <li><a href="#Use_cases" class="nav-link">Use cases</a></li>
+            <li><a href="#How_does_React_use_JavaScript" class="nav-link">How does React use JavaScript</a></li>
+            <li><a href="#Setting_up_your_first_React_app" class="nav-link">Setting up your first React app</a></li>
+            <li><a href="#Exploring_our_first_React_component" class="nav-link">Exploring our first React component</a></li>
+            <li><a href="#Moving_on_to_main" class="nav-link">Moving on to main</a></li>
+            <li><a href="#Starting_fresh" class="nav-link">Starting fresh</a></li>
+            <li><a href="#Practice_with_JSX" class="nav-link">Practice with JSX</a></li>
+            <li><a href="#Summary" class="nav-link">Summary</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="content">
-        <div id="search">
-          <label for="search-input">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-              <path
-                d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path></svg
-          ></label>
-          <input type="text" id="search-input" placeholder="Search Documentation" name="search-input" />
-        </div>
+       
         <section class="main-section" id="Getting_started_with_React">
           <header>Getting started with React</header>
           <p>
@@ -112,8 +107,9 @@
           <p>If Node is installed, you'll see a version number. If it isn't, you'll see an error message. To install Node, follow the instructions on the Node.js website.</p>
           <p>You may use the Yarn package manager as an alternative to npm but we'll assume you're using npm in this set of tutorials. See Package management basics for more information on npm and yarn.</p>
           <p>
-            If you're using Windows, you will need to install some software to give you parity with Unix/macOS terminal in order to use the terminal commands mentioned in this tutorial. Gitbash (which comes as part of the git for Windows
-            toolset) or Windows Subsystem for Linux (WSL) are both suitable. See Command line crash course for more information on these, and on terminal commands in general.
+            If you're using Windows, you will need to install some software to give you parity with Unix/macOS terminal in order to use the terminal commands mentioned in this tutorial. Gitbash which comes as part of the git for Windows
+
+            toolset or Windows Subsystem for Linux (WSL) are both suitable. See Command line crash course for more information on these, and on terminal commands in general.
           </p>
           <p>Also bear in mind that React and ReactDOM produce apps that only work on a fairly modern set of browsers like Firefox, Microsoft Edge, Safari, or Chrome when working through these tutorials.</p>
           <p>See the following for more information:</p>
@@ -294,7 +290,7 @@ export default App; -->
         </section>
         <section class="main-section" id="Moving_on_to_main">
           <header>Moving on to main</header>
-          <p>Let's open src/main.jsx, because that's where the <App /> component is being used. This file is the entry point for our app, and it initially looks like this:</p>
+          <p>Let's open src/main.jsx, because that's where the App component is being used. This file is the entry point for our app, and it initially looks like this:</p>
 
           <p>As with App.jsx, the file starts by importing all the JS modules and other assets it needs to run.</p>
           <p>
@@ -311,6 +307,26 @@ export default App; -->
         </section>
         <section class="main-section" id="Starting_fresh">
           <header>Starting fresh</header>
+          <p>Before we start building our app, we're going to delete some of the boilerplate code that Vite provided for us.</p>
+          <p>First, as an experiment, change the h1 element in App.jsx so that it reads "Hello, World!", then save your file. You'll notice that this change is immediately rendered in the development server running at http://localhost:3000 in your browser. Bear this in mind as you work on your app.</p>
+          <p>We won't be using the rest of the code! Replace the contents of App.jsx with the following:</p>
+          <code><h5>
+            JSX
+          </h5>
+        import "./App.css";
+
+function App() {
+  return (
+    <>
+      <header>
+        <h1>Hello, World!</h1>
+      </header>
+    </>
+  );
+}
+
+export default App;</code>
+
         </section>
         <section class="main-section" id="Practice_with_JSX">
           <header>Practice with JSX</header>
@@ -318,6 +334,48 @@ export default App; -->
             Next, we'll use our JavaScript skills to get a bit more comfortable writing JSX and working with data in React. We'll talk about how to add attributes to JSX elements, how to write comments, how to render content from variables
             and other expressions, and how to pass data into components with props.
           </p>
+          <h2>Adding attributes to JSX elements</h2>
+          <p>JSX elements can have attributes, just like HTML elements. Try adding a button below the <h1> element in your App.jsx file, like this:
+            
+            jsx</p>
+            <code>
+              <h5>JSX</h5>
+              button type="button">Click me!</button>
+            </code>
+            <p>When you save your file, you'll see a button with the words Click me!. The button doesn't do anything yet, but we'll learn about adding interactivity to our app soon.</p>
+            <p>Some attributes are different than their HTML counterparts. For example, the class attribute in HTML translates to className in JSX. This is because class is a reserved word in JavaScript, and JSX is a JavaScript extension. If you wanted to add a primary class to your button, you'd write it like this:</p>
+            <code>
+              <h5>JSX</h5>
+              button type="button" className="primary">
+  Click me!
+</button>
+            </code>
+            <h2>JavaScript expressions as content</h2>
+            <p>Unlike HTML, JSX allows us to write variables and other JavaScript expressions right alongside our other content. Let's declare a variable called subject just above the App() function:</p>
+            <code>
+              <h5>JSX</h5>
+              const subject = "React";
+function App() {
+  // code omitted for brevity
+}
+            </code>
+            <p>Next, replace the word "World" in the h1 element with {subject}:</p>
+            <code>
+              <h5>JSX</h5>
+              h1>Hello, {subject}!</h1>
+            </code>
+            <p>Save your file and check your browser. You should see "Hello, React!" rendered.</p>
+            <p>The curly braces around subject are another feature of JSX's syntax. The curly braces tell React that we want to read the value of the subject variable, rather than render the literal string "subject". You can put any valid JavaScript expression inside curly braces in JSX; React will evaluate it and render the result of the expression as the final content. Following is a series of examples, with comments above explaining what each expression will render:</p>
+            <code>
+              <h5>JSX</h5>
+              {/* Hello, React :! */}
+<h1>Hello, {subject + ' :'}!</h1>
+{/* Hello, REACT */}
+<h1>Hello, {subject.toUpperCase()}</h1>
+{/* Hello, 4 */}
+<h1>Hello, {2 + 2}!</h1>
+            </code>
+            <p>Even comments in JSX are written inside curly braces! This is because comments, too, are technically JavaScript expressions. The /* block comment syntax */ is necessary for your program to know where the comment starts and ends.</p>
         </section>
         <section class="main-section" id="Summary">
           <header>Summary</header>
@@ -335,5 +393,15 @@ export default App; -->
         </section>
       </div>
     </main>
+    <script type="text/javascript">
+  document.querySelector('.dropdown-btn').addEventListener('click', function() {
+  document.querySelector('.dropdown-content').classList.toggle('show');
+  });
+  document.querySelectorAll('.dropdown-content ul li').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelector('.dropdown-content').classList.remove('show');
+    });
+  });
+</script>
   </body>
 </html>
