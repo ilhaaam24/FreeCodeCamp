@@ -1,16 +1,16 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 html {
   scroll-behavior: smooth; /* Menambahkan smooth scrolling */
 }
-body{
+body {
   height: 500vh;
 }
-#header{
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,24 +20,24 @@ body{
   z-index: 99;
 }
 
-#header .logo img{
+#header .logo img {
   width: 150px;
   height: 40px;
   object-fit: cover;
   cursor: pointer;
 }
-#header .navbar{
+#header .navbar {
   display: flex;
   column-gap: 50px;
 }
-#header .navbar a{
+#header .navbar a {
   text-decoration: none;
   color: #000;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-#home{
+#home {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -45,19 +45,18 @@ body{
   height: 100vh;
   width: 100%;
 }
-#home .home-deskripsi{
+#home .home-deskripsi {
   width: 700px;
 }
-#home .home-deskripsi h1{
+#home .home-deskripsi h1 {
   font-size: 5rem;
   margin-bottom: 20px;
-
 }
-#home .home-deskripsi p{
+#home .home-deskripsi p {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-#home .home-deskripsi button{
+#home .home-deskripsi button {
   padding: 20px 50px;
   font-size: 1.2rem;
   background-color: #1f6dff;
@@ -65,18 +64,23 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s;
 }
-#home .home-img{
+#home .home-deskripsi button:hover {
+  background-color: #3b76ff;
+  transform: translateY(-5px);
+}
+#home .home-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#home .home-img img{
+#home .home-img img {
   object-fit: contain;
   transform: rotate(10deg);
 }
 
-#features{
+#features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,7 +89,7 @@ body{
   width: 100%;
   background-color: aliceblue;
 }
-#features .features-item{
+#features .features-item {
   /* border: 2px solid #c9c9c9; */
   display: flex;
   flex-direction: column;
@@ -96,20 +100,19 @@ body{
   height: 400px;
   text-align: center;
 }
-#features .features-item img{
+#features .features-item img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   margin: 10px 0;
 }
-#features .features-item p{
+#features .features-item p {
   font-size: 1.2rem;
   width: 300px;
 }
 
-
-#about{
-    display: flex;
+#about {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -117,21 +120,20 @@ body{
   height: 100vh;
 }
 
-#about .about-deskripsi{
-   width: 800px;
+#about .about-deskripsi {
+  width: 800px;
 }
-#about .about-deskripsi{
+#about .about-deskripsi {
   text-align: left;
-
 }
-#about .about-deskripsi h1{
+#about .about-deskripsi h1 {
   font-size: 3rem;
 }
-#about .about-deskripsi p{
+#about .about-deskripsi p {
   font-size: 1.3rem;
 }
 
-#dokumentasi{
+#dokumentasi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,12 +141,12 @@ body{
   height: auto;
   padding: 30px;
 }
-#dokumentasi iframe{
+#dokumentasi iframe {
   width: 1500px;
   height: 800px;
   border-radius: 20px;
 }
-#product{
+#product {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,19 +154,18 @@ body{
   width: 100%;
   margin-top: 100px;
 }
-#product h1{
+#product h1 {
   font-size: 3rem;
 }
-#product .product-item{
+#product .product-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 150px;
 
-margin: 100px;
-
+  margin: 100px;
 }
-#product .product-item .item{
+#product .product-item .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,17 +174,17 @@ margin: 100px;
   height: 400px;
   text-align: center;
 }
-#product .product-item .item img{
+#product .product-item .item img {
   width: 350px;
   height: 350px;
   object-fit: contain;
   margin: 20px 0;
   transition: 0.5s;
 }
-#product .product-item .item img:hover{
+#product .product-item .item img:hover {
   transform: scale(1.1);
 }
-#product .product-item .item button{
+#product .product-item .item button {
   margin: 30px 0;
   font-size: 1rem;
   color: #fff;
@@ -192,78 +193,83 @@ margin: 100px;
   border: 0;
   background-color: rgb(11, 121, 255);
 }
-@media screen and (max-width: 1024px) {
-  #home{
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #header .navbar a {
+    font-size: 1rem;
+    margin: 0;
+  }
+  #home {
     padding: 30px;
   }
-  #home .home-deskripsi h1{
+  #home .home-deskripsi h1 {
     font-size: 4rem;
   }
-  #home .home-img img{
+  #home .home-img img {
     width: 500px;
     height: 500px;
   }
-  
-  #features .features-item{
+
+  #features .features-item {
     width: 50%;
   }
-  #dokumentasi iframe{
+  #dokumentasi iframe {
     width: 1000px;
     height: 500px;
   }
-  #product .product-item .item{
+  #product .product-item .item {
     width: 50%;
   }
-
-  #about .about-deskripsi{
+  
+  #about .about-deskripsi {
     width: 90%;
   }
-  #about .about-img img{
+  #about .about-img img {
     width: 500px;
     height: 500px;
-    object-fit:contain ;
+    object-fit: contain;
+    margin: 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #header .navbar{
+  #header .navbar {
     display: none;
   }
-  #home{
+  #home {
     row-gap: 30px;
   }
-  #home .home-deskripsi h1{
+  #home .home-deskripsi h1 {
     font-size: 3rem;
   }
-  #home .home-img img{
+  #home .home-img img {
     width: 400px;
     height: 400px;
-  }   
-  #features{
+  }
+  #features {
     width: 100%;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  #features .features-item{
+  #features .features-item {
     width: 100%;
   }
-  #about{
+  #about {
     padding: 20px;
   }
-  #about .about-deskripsi{
+  #about .about-deskripsi {
     text-align: center;
     width: 100%;
   }
-  #about .about-img img{
+  #about .about-img img {
     width: 400px;
     height: 400px;
     object-fit: contain;
   }
-  #product .product-item{
+  #product .product-item {
     flex-direction: column;
   }
-  #product .product-item .item{
+  #product .product-item .item {
     width: 100%;
   }
 }
