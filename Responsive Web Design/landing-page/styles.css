@@ -113,7 +113,6 @@ body {
 
 #about {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -138,7 +137,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding: 30px;
 }
 #dokumentasi iframe {
@@ -162,8 +161,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 150px;
-
-  margin: 100px;
+  margin: 100px 50px;
 }
 #product .product-item .item {
   display: flex;
@@ -193,32 +191,62 @@ body {
   border: 0;
   background-color: rgb(11, 121, 255);
 }@media screen and (min-width: 600px) and (max-width: 996px) {
+  #header .logo img{
+    width: 120px;
+    height: 30px;
+    object-fit: cover;
+
+  }
+  #header .navbar{
+    column-gap: 20px;
+  }
   #header .navbar a {
     font-size: 1rem;
     margin: 0;
   }
   #home {
     flex-direction: column-reverse;
-    gap: 50px;
-    padding: 100px 0;
+     align-items: center;
+    padding: 90px 20px 50px;
+    row-gap: 30px;
+  }
+  #home .home-deskripsi {
+    width: 90%;
   }
   #home .home-deskripsi h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  #home .home-deskripsi p {
+    font-size: 1.3rem;
   }
   #home .home-img img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: auto;
   }
 
-  #features .features-item {
-    width: 50%;
+  #features {
+    column-gap: 70px;
   }
+  #features .features-item {
+    width: 30%;
+  }
+ 
   #dokumentasi iframe {
-    width: 1000px;
-    height: 500px;
+    margin-top:300px;
+    width: 900px;
+    height: 400px;
+  }
+  #product h1 {
+    padding-top: 30px;
+  }
+  #product .product-item {
+    /* column-gap: 10px; */
   }
   #product .product-item .item {
     width: 50%;
+  }
+  #about{
+    flex-direction: column;
   }
   
   #about .about-deskripsi {
@@ -231,48 +259,10 @@ body {
     object-fit: contain;
     margin: 20px;
   }
+  
 }
 
 /* Mobile Phone - Layar dengan lebar kurang dari 600px */
 @media screen and (max-width: 600px) {
-  #header .navbar {
-    display: none;
-  }
-  #home {
-    row-gap: 30px;
-  }
-  #home .home-deskripsi h1 {
-    font-size: 3rem;
-  }
-  #home .home-img img {
-    width: 400px;
-    height: 400px;
-  }
-  #features {
-    width: 100%;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  #features .features-item {
-    width: 100%;
-  }
-  #about {
-    padding: 20px;
-  }
-  #about .about-deskripsi {
-    text-align: center;
-    width: 100%;
-  }
-  #about .about-img img {
-    width: 400px;
-    height: 400px;
-    object-fit: contain;
-  }
-  #product .product-item {
-    flex-direction: column;
-  }
-  #product .product-item .item {
-    width: 100%;
-  }
+ 
 }
