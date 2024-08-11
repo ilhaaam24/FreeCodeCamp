@@ -39,7 +39,6 @@ body {
 
 #home {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
@@ -57,18 +56,19 @@ body {
   margin-bottom: 20px;
 }
 #home .home-deskripsi button {
-  padding: 20px 50px;
+  padding: 15px 30px;
   font-size: 1.2rem;
   background-color: #1f6dff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   cursor: pointer;
-  transition: 0.2s;
+  /* transition: 0.2s; */
+   transition: all 0.25s ease-out
 }
 #home .home-deskripsi button:hover {
   background-color: #3b76ff;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 #home .home-img {
   display: flex;
@@ -192,14 +192,15 @@ body {
   border-radius: 30px;
   border: 0;
   background-color: rgb(11, 121, 255);
-}
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+}@media screen and (min-width: 600px) and (max-width: 996px) {
   #header .navbar a {
     font-size: 1rem;
     margin: 0;
   }
   #home {
-    padding: 30px;
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 100px 0;
   }
   #home .home-deskripsi h1 {
     font-size: 4rem;
@@ -221,17 +222,19 @@ body {
   }
   
   #about .about-deskripsi {
+    text-align: center;
     width: 90%;
   }
   #about .about-img img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     object-fit: contain;
-    margin: 30px;
+    margin: 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* Mobile Phone - Layar dengan lebar kurang dari 600px */
+@media screen and (max-width: 600px) {
   #header .navbar {
     display: none;
   }
