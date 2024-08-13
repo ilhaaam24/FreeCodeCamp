@@ -19,7 +19,7 @@ html {
 }
 
 #header .logo img {
-  width: 150px;
+  width: 40px;
   height: 40px;
   object-fit: cover;
   cursor: pointer;
@@ -139,7 +139,6 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   padding: 30px;
 }
 #dokumentasi iframe {
@@ -197,7 +196,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b0cdff;
+  background-color: #ebf3ff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   width: 90%;
   margin: 50px auto;
@@ -280,8 +279,8 @@ html {
 
 @media screen and (min-width: 600px) and (max-width: 996px) {
   #header .logo img {
-    width: 120px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
   }
   #header .navbar {
@@ -323,9 +322,20 @@ html {
   #features .features-item {
     width: 30%;
   }
+  #features .features-item img {
+    width: 100px;
+    height: 100px;
+  }
+  #features .features-item h1 {
+    font-size: 1.2rem;
+  }
+  #features .features-item p {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
 
   #dokumentasi iframe {
-    margin-top: 300px;
+    margin-top: 100px;
     width: 900px;
     height: 400px;
   }
