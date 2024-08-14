@@ -13,7 +13,7 @@ html{
 #navbar {
   position: fixed;
   width: 100%;
-  background-color: rgb(38, 105, 173);
+  background-color: rgb(100, 12, 22);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -28,6 +28,7 @@ html{
   text-decoration: none;
   padding: 0 1em;
   font-size: 1.2em;
+  font-weight: 600;
 }
 
 .nav-link:hover {
@@ -48,28 +49,38 @@ html{
   height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction:column;
+  row-gap: 20px;
   justify-content: center;
   align-items: center;
-  background: #282828;
+  background: linear-gradient(135deg, #070707, #3f3f3f);
 }
 
-
+#welcome-section img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5)
+}
 #welcome-section h1 {
   font-size: 3em;
   text-align: center;
+  filter: drop-shadow(0 10px 10px rgba(149, 10, 10, 0.5));
 }
 #welcome-section h2{
   font-size: 2em;
 }
 /* Styling the projects section */
 #projects {
+  display: flex;
+  padding: 200px 0;
+  flex-direction: column;
   font-size: 1.5rem;
-  padding: 4em 2em;
-  background: #8f8f8f;
+  background: #454545;
   text-align: center;
 }
 
 #projects h2 {
+  color: #fff;
   margin-bottom: 1em;
 }
 .project-items{
@@ -80,7 +91,7 @@ html{
 }
 
 .project-tile {
-  width: 30%;
+  width: 300px;
   height: 400px;
   background: #fff;
   border: 1px solid #ccc;
@@ -102,6 +113,48 @@ html{
   text-decoration: underline;
 }
 
+#contact{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  background-color: #282828;
+  color: #fff;
+}
+#contact h1{
+  font-size: 3rem;
+}
+#contact p{
+  font-size: 1.5rem;
+}
+#contact .sosial-icon{
+  display: flex;
+  column-gap: 60px;
+}
+#contact .sosial-icon a{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  column-gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363636;
+  height: 100px;
+  color: #fff;
+}
+#footer p{
+  font-size: 1rem;
+}
 /* Responsive styling */
 @media (max-width: 768px) {
   #navbar {
