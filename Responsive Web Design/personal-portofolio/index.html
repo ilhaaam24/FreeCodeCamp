@@ -1,39 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-  <nav id="navbar">
-    <a href="#welcome-section" class="nav-link">Home</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="https://github.com/yourprofile" id="profile-link" target="_blank">My GitHub</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* CSS for typing effect */
+      .typing-effect {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid black;
+        animation: blink 0.75s step-end infinite;
+      }
 
-  <section id="welcome-section">
-    <h1>Hey iam Ilham</h1>
-    <h2>a Web Developer</h2>
-  </section>
+      @keyframes blink {
+        0% {
+          border-right: 2px solid transparent;
+        }
+        50% {
+          border-right: 2px solid black;
+        }
+        100% {
+          border-right: 2px solid transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="https://github.com/ilhaaam24" id="profile-link" target="_blank"><img src="https://github.com/github.png" alt="" /></a>
+    </nav>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project-tile">
-      <h3>Project 1</h3>
-      <p>This is a brief description of my first project.</p>
-      <a href="https://example.com/project1" target="_blank">View Project</a>
-    </div>
-    <div class="project-tile">
-      <h3>Project 2</h3>
-      <p>This is a brief description of my second project.</p>
-      <a href="https://example.com/project2" target="_blank">View Project</a>
-    </div>
-    <!-- Add more project tiles as needed -->
-  </section>
-</body>
+    <section id="welcome-section">
+      <h1 class="typing-effect" id="typing-text"></h1>
+      <h2>a Web Developer</h2>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-items">
+        <div class="project-tile">
+          <h3>Project 1</h3>
+          <p>This is a brief description of my first project.</p>
+          <a href="https://example.com/project1" target="_blank">View Project</a>
+        </div>
+        <div class="project-tile">
+          <h3>Project 1</h3>
+          <p>This is a brief description of my first project.</p>
+          <a href="https://example.com/project1" target="_blank">View Project</a>
+        </div>
+        <div class="project-tile">
+          <h3>Project 1</h3>
+          <p>This is a brief description of my first project.</p>
+          <a href="https://example.com/project1" target="_blank">View Project</a>
+        </div>
+        <div class="project-tile">
+          <h3>Project 1</h3>
+          <p>This is a brief description of my first project.</p>
+          <a href="https://example.com/project1" target="_blank">View Project</a>
+        </div>
+        <div class="project-tile">
+          <h3>Project 2</h3>
+          <p>This is a brief description of my second project.</p>
+          <a href="https://example.com/project2" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Add more project tiles as needed -->
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to get in touch with me.</p>
+      <a href="mailto:KfR4z@example.com">KfR4z@example.com</a>
+    </section>
+
+    <script>
+      // JavaScript for typing effect
+      const text = "Hey I am Ilham";
+      const typingText = document.getElementById("typing-text");
+      let index = 0;
+      let isDeleting = false;
+
+      function type() {
+        if (isDeleting) {
+          typingText.innerHTML = text.substring(0, index);
+          index--;
+          if (index === 0) {
+            isDeleting = false;
+            setTimeout(type, 1000); // Pause before typing again
+          } else {
+            setTimeout(type, 100); // Speed of deletion
+          }
+        } else {
+          typingText.innerHTML = text.substring(0, index+1);
+          index++;
+          if (index > text.length) {
+            isDeleting = true;
+            setTimeout(type, 1000); // Pause before deleting
+          } else {
+            setTimeout(type, 100); // Speed of typing
+          }
+        }
+      }
+
+      type();
+    </script>
+  </body>
 </html>
