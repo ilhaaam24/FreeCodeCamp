@@ -52,7 +52,7 @@ html{
   row-gap: 20px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #070707, #3f3f3f);
+  background: linear-gradient(180deg, #070707, #3f3f3f);
 }
 
 #welcome-section img {
@@ -93,8 +93,8 @@ html{
 .project-tile {
   width: 300px;
   height: 400px;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #7e7e7e;
+  border: 1px solid #6b0b0b;
   border-radius: 5px;
   padding: 1em;
   margin: 1em 0;
