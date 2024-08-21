@@ -5,10 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(90deg, #8ce4ff, #929fff);
+  background: linear-gradient(180deg, #15566a, #000000);
   display: flex;
 
-    
+
   justify-content: center;
   align-items: center;
   height: 100vh;
