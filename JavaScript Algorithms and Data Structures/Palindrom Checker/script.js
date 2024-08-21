@@ -25,7 +25,7 @@ checkBtn.addEventListener("click", function (event) {
   event.preventDefault(); // Mencegah reload halaman
   const input = document.getElementById("text-input").value;
   const result = document.getElementById("result");
-
+  result.style.textAlign = "center";
   if (input === "") {
     alert("Please input a value");
     return;
