@@ -41,3 +41,6 @@ body {
   border-radius: 5px;
   margin-top: 5px;
 }
+.container form input:focus{
+  outline: none;
+}

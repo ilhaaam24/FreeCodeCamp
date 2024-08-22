@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 100%;
   width: 550px;
-  background-color: #fff;
+  background-color: #f4f4f4;
   padding: 60px;
   border-radius: 5px;
 }
@@ -39,7 +39,9 @@ body {
 .container form button{
   width: 100%;
   padding: 10px;
+  color: #fff ;
   border: 1px solid #ccc;
+  background-color: #1a979e;
   border-radius: 5px;
   margin-top: 5px;
 }
