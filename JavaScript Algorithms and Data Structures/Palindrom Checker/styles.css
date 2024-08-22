@@ -37,6 +37,7 @@ body {
 .container form button{
   width: 100%;
   padding: 10px;
+  background-color: #8ce4ff;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 5px;
