@@ -46,3 +46,7 @@ body {
 .container form input:focus{
   outline: none;
 }
+.container form button:hover{
+  background-color: #70c8ff;
+  color: #fff;
+}
